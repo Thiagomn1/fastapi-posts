@@ -1,0 +1,37 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment folder (common names for virtual environments)
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+*.egg-info/
+*.dist-info/
+*.eggs/
+dist/
+build/
+eggs/
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Editor backups
+*~
+*.swp
+
+# MacOS Finder metadata
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+.env
