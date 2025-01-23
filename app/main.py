@@ -1,12 +1,9 @@
 from fastapi import FastAPI, HTTPException, Depends, status
-from typing import Annotated
 from .models import User, Post
 from .schemas import PostBase, UserBase
 from .crud import create_post, delete_post, get_post, create_user, get_user
 from .database import create_db_and_tables, get_session
-from sqlmodel import Session
-
-SessionDep = Annotated[Session, Depends(get_session)]
+from .dependencies import SessionDep
 
 async def lifespan(app: FastAPI):
     create_db_and_tables()
